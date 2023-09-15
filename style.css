@@ -1,0 +1,54 @@
+
+body {
+    font-size: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: darkslategray;
+    text-align: center;
+}
+h2{
+    background-color: yellow;
+    text-align: center;
+}
+h3{
+    text-align: left;
+}
+table, th, td{
+    border: 1px solid;
+    text-align: center;
+    border-collapse: collapse;
+    
+
+}
+tr#Header{
+
+}
+td#thu-cont{
+    color: #e0f6ef;
+    background-color: #6ab099;
+}
+
+ul{
+    text-align: left;
+}
+
+form{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h3#InField{
+    font-size: small;
+    color: black;
+}
+
+img{
+    padding: 10px;
+    transition: all 1s;
+    border: 2px solid black;
+}
+
+img:hover{
+    opacity: 0.5;
+}

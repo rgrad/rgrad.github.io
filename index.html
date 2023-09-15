@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            
+            .flex-container{
+                display: flex;
+                justify-content: space-around;
+
+            }
+            .flex-container > div{
+               width:max-content;
+               margin: 20px;
+               text-align: center;
+               border: 1px solid black;
+            }
+
+
+        </style>
         <title>Home Work 1</title>
     </head>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/table.css">
     <body>
 
           <h1>Robert Grad</h1> 
           
-          <h2>c97r566</h2>
+          <h2>Net ID: c97r566</h2>
 
           <a href="https://rgrad.github.io/"> my github page</a>
 
-          <h2>CSCI 460 MWF 8:00-8:50</h2>
-          <h2>CSCI 432 MWF 15:10-16:00</h2>
-          <h2>CSCI 331 MWF 16:10-17:00</h2>
-          <h2>STAT 216Q MWF 17:10-18:00</h2>
-          <h2>CSCI 495 R 16:10-18:00</h2>
 
-          <table>
-            <tr>
+        <div class="flex-container">
+            <div>
+          <form action="https://www.cs.montana.edu/users/h48c334/form-viewer.php" method="get">
+                <label for="name"></label>
+                <h3 id="InField">Name & Date of birth</h3>
+                <input type="text" name="test" id="testid" >
+                <input type="date" name="DOB" id ="DOBid">
+                <input type="submit"name="submit" id="submitid" value="GO">
+            </form>
+
+            <h3>My interests: Hiking and Longboarding</h3>
+
+            <a href="https://en.wikipedia.org/wiki/Hiking"><img src="images/hiking.jpg" alt="hiking" id="hik" width="300px" height="200px"></a>
+
+            <a href="https://en.wikipedia.org/wiki/Longboarding"><img src="images/longboard.jpg" alt="Longboarding" id="long" width="300" height="150px"></a>
+
+
+        </div>
+
+        <div>
+            <h3>School Schedule</h3>
+          <table id="Schedule">
+            <tr id="Header">
                 <th>Time</th>
                 <th>Monday</th>
                 <th>Tuesday</th>
@@ -36,6 +70,7 @@
             </tr>
             <tr>
                 <td>9:00</td>
+                <td colspan="5" rowspan="3">Work</td>
             </tr>
             <tr>
                 <td>10:00</td>
@@ -43,11 +78,13 @@
             <tr>
                 <td>11:00</td>
             </tr>
-            <tr>
+            <tr id="noon">
                 <td>12:00</td>
+                <td colspan="5"> Lunch </td>
             </tr>
             <tr>
                 <td>13:00</td>
+                <td colspan="5" rowspan="2">Work</td>
             </tr>
             <tr>
                 <td>14:00</td>
@@ -65,7 +102,7 @@
                 <td>CSCI 331</td>
                 <td> </td>
                 <td>CSCI 331</td>
-                <td>CSCI 495</td>
+                <td id="thu-cont">CSCI 495</td>
                 <td>CSCI 331</td>
             </tr>
             <tr>
@@ -78,21 +115,21 @@
             </tr>
             <tr>
                 <td>18:00</td>
+                <td colspan="5">Home</td>
             </tr>
 
           </table>
 
-          <h2>EELE 261</h2>
-          <h2>M 242</h2>
-          <h2>CSCI 338</h2>
-          <h2>CSCI 366</h2>
+        <h3>Previous Courses</h3>
 
           <ul>
             <li>CSCI 107</li>
             <li>EGEN 310R</li>
             <li>ENSC 110</li>
           </ul>
+        </div>
 
+        </div>
     </body>
 
 
